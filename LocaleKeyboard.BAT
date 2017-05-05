@@ -52,7 +52,9 @@ goto M
 REM ---------------------------------------
 REM  Update locales
 REM ---------------------------------------
-start .\locales\Call_Update.bat
+cd locales
+start Call_Update.bat
+cd ..
 goto M
 
 :B
