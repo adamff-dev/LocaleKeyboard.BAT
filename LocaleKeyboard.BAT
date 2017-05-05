@@ -12,6 +12,9 @@ REM  Locale selection
 REM ---------------------------------------
 cls
 echo -------------------------------------
+echo  LocaleKeyboard.BAT 
+echo                     By BlueArduino20
+echo -------------------------------------
 echo  Select your locale:
 echo -------------------------------------
 echo  1. en_US     5. be_BE     9. da_DK
@@ -45,6 +48,12 @@ if %LOC%==9 goto 9
 if %LOC%==10 goto 10
 if %LOC%==11 goto 11
 if %LOC%==12 goto 12
+cls
+echo -------------------------------------
+echo  You have to choose a valid option.
+echo  Press enter to continue.
+echo -------------------------------------
+pause >nul
 goto M
 
 
@@ -71,15 +80,36 @@ REM ---------------------------------------
 start https://github.com/BlueArduino20/LocaleKeyboard.BAT
 goto M
 
+:a
+REM ---------------------------------------
+REM  Update locales
+REM ---------------------------------------
+cd locales
+start Call_Update.bat
+cd ..
+goto M
+
+:b
+REM ---------------------------------------
+REM  Nurrl's repository
+REM ---------------------------------------
+start https://github.com/Nurrl/LocaleKeyboard.js
+goto M
+
+:c
+REM ---------------------------------------
+REM  BlueArduino20's repository
+REM ---------------------------------------
+start https://github.com/BlueArduino20/LocaleKeyboard.BAT
+goto M
+
 
 REM ---------------------------------------
 REM  "Keyboard.cpp" creators
 REM ---------------------------------------
 
 :1
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\en_US.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -89,9 +119,7 @@ pause
 goto M
 
 :2
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\en_UK.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -101,9 +129,7 @@ pause
 goto M
 
 :3
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\de_DE.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -113,9 +139,7 @@ pause
 goto M
 
 :4
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\fr_FR.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -125,9 +149,7 @@ pause
 goto M
 
 :5
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\be_BE.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -137,9 +159,7 @@ pause
 goto M
 
 :6
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\es_ES.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -149,9 +169,7 @@ pause
 goto M
 
 :7
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\fi_FI.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -161,9 +179,7 @@ pause
 goto M
 
 :8
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\cz_CZ.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -173,9 +189,7 @@ pause
 goto M
 
 :9
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\da_DK.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -185,9 +199,7 @@ pause
 goto M
 
 :10
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\pt_PT.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -197,9 +209,7 @@ pause
 goto M
 
 :11
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\tr_TR.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
@@ -209,9 +219,7 @@ pause
 goto M
 
 :12
-IF EXIST "Keyboard.cpp" (
-del Keyboard.cpp
-)
+IF EXIST "Keyboard.cpp" (del Keyboard.cpp)
 type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\it_IT.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
