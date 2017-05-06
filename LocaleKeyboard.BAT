@@ -36,6 +36,9 @@ set/p "LOC=>"
 if %LOC%==A goto A
 if %LOC%==B goto B
 if %LOC%==C goto C
+if %LOC%==a goto A
+if %LOC%==b goto B
+if %LOC%==c goto C
 if %LOC%==1 goto 1
 if %LOC%==2 goto 2
 if %LOC%==3 goto 3
@@ -74,29 +77,6 @@ start https://github.com/Nurrl/LocaleKeyboard.js
 goto M
 
 :C
-REM ---------------------------------------
-REM  BlueArduino20's repository
-REM ---------------------------------------
-start https://github.com/BlueArduino20/LocaleKeyboard.BAT
-goto M
-
-:a
-REM ---------------------------------------
-REM  Update locales
-REM ---------------------------------------
-cd locales
-start Call_Update.bat
-cd ..
-goto M
-
-:b
-REM ---------------------------------------
-REM  Nurrl's repository
-REM ---------------------------------------
-start https://github.com/Nurrl/LocaleKeyboard.js
-goto M
-
-:c
 REM ---------------------------------------
 REM  BlueArduino20's repository
 REM ---------------------------------------
