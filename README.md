@@ -1,5 +1,5 @@
 # LocaleKeyboard.BAT
-The software generates a Keyboard.cpp (For Keyboard library) according to our locale chosen.
+This software generates a Keyboard.cpp (For Keyboard library) according to our locale chosen.
 
 <img src="https://raw.githubusercontent.com/BlueArduino20/LocaleKeyboard.BAT/master/Screenshot_1.PNG">
 
