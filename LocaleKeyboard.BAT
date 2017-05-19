@@ -50,9 +50,20 @@ type ".\src\Keyboard1.cpp">>Keyboard.cpp
 type ".\locales\%LOCALE%.lang">>Keyboard.cpp
 type ".\src\Keyboard2.cpp">>Keyboard.cpp
 cls
-echo Done! Copy the "Keyboard.cpp" file into your "Arduino/libraries/Keyboard/src" folder 
-pause
-exit
+
+set file="Keyboard.cpp"
+set maxbytesize=5200
+FOR /F "usebackq" %%A IN ('%file%') DO set size=%%~zA
+if %size% GTR %maxbytesize% (
+    echo Done! Copy the "Keyboard.cpp" file into your "Arduino/libraries/Keyboard/src" folder
+	pause
+	exit
+) ELSE (
+	del Keyboard.cpp
+    echo Something went wrong. Maybe you've chosen a wrong option. Try it again.
+	pause
+	goto M
+)
 
 :A
 cd locales
