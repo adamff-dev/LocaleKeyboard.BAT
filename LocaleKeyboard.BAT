@@ -20,7 +20,7 @@ echo  A. Update locales from the internet
 echo -------------------------------------
 echo  B. Go to Nurrl's GitHub repository
 echo -------------------------------------
-echo  C. Go to this project's repository
+echo  C. Go to BlueArduino20's repository
 echo -------------------------------------
 
 set/p "LOC=>"
