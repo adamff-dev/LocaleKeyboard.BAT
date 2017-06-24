@@ -6,10 +6,10 @@ This software generates a Keyboard.cpp (For the Keyboard library) according to o
 It's made thanks Nurrl's repository and the .lang files have been extracted from his repository.
 <a href="https://github.com/Nurrl/LocaleKeyboard.js">https://github.com/Nurrl/LocaleKeyboard.js<a>
 
-# How to use it?
+<h2>How to use it?</h2>
 <a href="https://www.youtube.com/watch?v=R4KqMYCCu4A">https://www.youtube.com/watch?v=R4KqMYCCu4A<a>
 
-# Linux
+<h2>Linux</h2>
 If you want to use this software in Linux, you should see this:
 
 <a href="https://github.com/BlueArduino20/LocaleKeyboard.SH">https://github.com/BlueArduino20/LocaleKeyboard.SH</a>
