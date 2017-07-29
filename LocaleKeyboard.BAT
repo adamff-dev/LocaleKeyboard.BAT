@@ -15,6 +15,7 @@ echo  1. en_US     5. be_BE     9. da_DK
 echo  2. en_UK     6. es_ES     10. pt_PT
 echo  3. de_DE     7. fi_FI     11. tr_TR
 echo  4. fr_FR     8. cz_CZ     12. it_IT
+echo              13. sv_SE
 echo -------------------------------------
 echo  A. Update locales from the internet
 echo -------------------------------------
@@ -42,6 +43,7 @@ if %LOC%==9 set LOCALE="da_DK"
 if %LOC%==10 set LOCALE="pt_PT"
 if %LOC%==11 set LOCALE="tr_TR"
 if %LOC%==12 set LOCALE="it_IT"
+if %LOC%==13 set LOCALE="sv_SE"
 
 :CPP
 cls
