@@ -41,6 +41,9 @@ cls
 ECHO Updating... Please, wait.
 cscript Updater.vbs https://raw.githubusercontent.com/Nurrl/LocaleKeyboard.js/master/locales/it_IT.lang >nul
 cls
+ECHO Updating... Please, wait.
+cscript Updater.vbs https://raw.githubusercontent.com/Nurrl/LocaleKeyboard.js/master/locales/sv_SE.lang >nul
+cls
 echo -------------------------------------
 echo                 Done! 
 echo       Press any key to continue.
