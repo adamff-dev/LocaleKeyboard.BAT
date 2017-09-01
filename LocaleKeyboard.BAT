@@ -75,8 +75,8 @@ echo --------------------------------------
 echo       1. QWERTY      2. QWERTZ
 echo --------------------------------------
 set/p "CZ=>"
-if %CZ%==1 LOCALE="cs_CZ_QWERTY"
-if %CZ%==2 LOCALE="cs_CZ_QWERTZ"
+if %CZ%==1 set LOCALE="cs_CZ_QWERTY"
+if %CZ%==2 set LOCALE="cs_CZ_QWERTZ"
 cls
 goto CPP
 
