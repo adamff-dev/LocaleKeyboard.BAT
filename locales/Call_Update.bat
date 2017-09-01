@@ -27,7 +27,10 @@ ECHO Updating... Please, wait.
 cscript Updater.vbs https://raw.githubusercontent.com/Nurrl/LocaleKeyboard.js/master/locales/fi_FI.lang >nul
 cls
 ECHO Updating... Please, wait.
-cscript Updater.vbs https://raw.githubusercontent.com/Nurrl/LocaleKeyboard.js/master/locales/cz_CZ.lang >nul
+cscript Updater.vbs https://raw.githubusercontent.com/Nurrl/LocaleKeyboard.js/master/locales/cs_CZ_QWERTY.lang >nul
+cls
+ECHO Updating... Please, wait.
+cscript Updater.vbs https://raw.githubusercontent.com/Nurrl/LocaleKeyboard.js/master/locales/cs_CZ_QWERTZ.lang >nul
 cls
 ECHO Updating... Please, wait.
 cscript Updater.vbs https://raw.githubusercontent.com/Nurrl/LocaleKeyboard.js/master/locales/da_DK.lang >nul
