@@ -38,7 +38,7 @@ if %LOC%==4 set LOCALE="fr_FR"
 if %LOC%==5 set LOCALE="be_BE"
 if %LOC%==6 set LOCALE="es_ES"
 if %LOC%==7 set LOCALE="fi_FI"
-if %LOC%==8 set LOCALE="cz_CZ"
+if %LOC%==8 goto 8
 if %LOC%==9 set LOCALE="da_DK"
 if %LOC%==10 set LOCALE="pt_PT"
 if %LOC%==11 set LOCALE="tr_TR"
@@ -66,6 +66,19 @@ if %size% GTR %maxbytesize% (
 	pause
 	goto M
 )
+
+:8
+cls
+echo --------------------------------------
+echo  What arrangement do you want to use?
+echo --------------------------------------
+echo       1. QWERTY      2. QWERTZ
+echo --------------------------------------
+set/p "CZ=>"
+if %CZ%==1 LOCALE="cs_CZ_QWERTY"
+if %CZ%==2 LOCALE="cs_CZ_QWERTZ"
+cls
+goto CPP
 
 :A
 cd locales
